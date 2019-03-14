@@ -49,7 +49,6 @@ const Button = ({
       styles.textButton,
       textStyle,
       styles[`type${type}Text`],
-
     ]}
     > {text}
     </Text>
