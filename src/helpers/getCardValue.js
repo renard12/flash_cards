@@ -16,7 +16,7 @@ const getCardValue = (card) =>{
 export const whoWin = (cards, beat) => {
     const firstCard = getCardValue(cards[0]);
     const secondCard = getCardValue(cards[1]);
-    if( firstCard > secondCard && beat === 'Up' || firstCard < secondCard && beat === 'Down') {
+    if( firstCard < secondCard && beat === 'Up' || firstCard > secondCard && beat === 'Down') {
         return 'You win'
     } else {
         return 'You loose'
